@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_hocsa_san_encuesta" label="Encuesta Servicio de Soporte" max_length="40" name="x_hocsa_san_encuesta_de_soporte" type="collection">
+        <element label="Cliente" mandatory="true" max_length="40" name="u_slx_cliente" reference="sys_user" type="reference"/>
+        <element label="Encuesta entregada por" mandatory="true" max_length="150" name="u_slx_encuesta_entregada_por" reference="sys_user" type="reference"/>
+        <element label="Fecha de cierre AC" max_length="40" name="u_slx_fecha_cierre_ac" type="glide_date"/>
+        <element label="Fecha compromiso AC" max_length="40" name="u_slx_fecha_compromiso_ac" type="glide_date"/>
+        <element label="Fecha firma encuesta por cliente" max_length="40" name="u_slx_fecha_firma_encuesta" type="glide_date"/>
+        <element label="Notas" max_length="600" name="u_slx_notas" type="journal_input"/>
+        <element label="N° Planes de Acción" max_length="400" name="u_slx_numero_planes_accion" type="string"/>
+        <element label="Responsable de la AC" max_length="100" name="u_slx_responsable_ac" reference="sys_user" type="reference"/>
+    </element>
+</database>

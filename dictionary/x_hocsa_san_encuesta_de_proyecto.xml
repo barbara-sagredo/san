@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" extends="x_hocsa_san_encuesta" label="Encuesta Término de Proyecto" max_length="40" name="x_hocsa_san_encuesta_de_proyecto" type="collection">
+        <element label="Cliente que firma la encuesta" mandatory="true" max_length="100" name="u_slx_cliente_firma_encuesta" reference="sys_user" type="reference"/>
+        <element label="N° Entregable" max_length="32" name="u_slx_entregable" reference="x_hocsa_san_entregable" type="reference"/>
+        <element label="Fecha Aceptación del Servicio" max_length="40" name="u_slx_fecha_aceptacion_servicio" type="glide_date"/>
+        <element label="Fecha de cierre AC" max_length="40" name="u_slx_fecha_cierre_ac" type="glide_date"/>
+        <element label="Fecha compromiso AC" max_length="40" name="u_slx_fecha_compromiso_ac" type="glide_date"/>
+        <element label=" Fecha Devolución Encuesta CD por JP" max_length="40" name="u_slx_fecha_devolucion_encuesta" type="glide_date"/>
+        <element label="Fecha de Publicación de Encuesta" max_length="40" name="u_slx_fecha_publicacion_encuesta" type="glide_date"/>
+        <element label="Indicador de Percepción Calidad y Competencias (IPCC)" max_length="40" name="u_slx_ipcc" type="integer"/>
+        <element label="Notas" max_length="4000" name="u_slx_notas" type="journal_input"/>
+        <element label="N° Planes de acción" max_length="400" name="u_slx_numero_planes_accion" type="string"/>
+        <element label="Responsable de la AC" max_length="100" name="u_slx_responsable_ac" reference="sys_user" type="reference"/>
+        <index name="index">
+            <element name="u_slx_entregable"/>
+        </index>
+    </element>
+</database>
